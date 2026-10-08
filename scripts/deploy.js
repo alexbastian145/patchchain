@@ -1,7 +1,8 @@
 const hre = require("hardhat");
 
 async function main() {
-  const [deployer, arbitrator] = await hre.ethers.getSigners();
+  const [deployer] = await hre.ethers.getSigners();
+  const arbitrator = deployer;
   console.log("Deploying contracts with account:", deployer.address);
 
   const REQUIRED_STAKE = hre.ethers.parseEther("0.01"); // researcher stake per submission
