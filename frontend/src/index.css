@@ -1,0 +1,19 @@
+@import "@fontsource/plus-jakarta-sans/400.css";
+@import "@fontsource/plus-jakarta-sans/600.css";
+@import "@fontsource/plus-jakarta-sans/700.css";
+@import "@fontsource/jetbrains-mono/400.css";
+@import "@fontsource/jetbrains-mono/600.css";
+@import "material-symbols/outlined.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body { margin: 0; background: #0f131d; color-scheme: dark; }
+  body { font-family: "Plus Jakarta Sans", system-ui, sans-serif; overscroll-behavior: none; }
+  ::selection { background: #00f2fe; color: #006a70; }
+}
+.material-symbols-outlined { font-size: 20px; line-height: 1; vertical-align: middle; }
+.glass { background: rgba(23,27,38,.7); backdrop-filter: blur(16px); border: 1px solid rgba(255,255,255,.07); }
+.glow { box-shadow: 0 0 24px -4px rgba(0,242,254,.25); }
